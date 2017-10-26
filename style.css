@@ -1,0 +1,40 @@
+html, body {
+	height: 100%;
+}
+
+#wrapper {
+	position: relative;
+	min-height: 100%;
+}
+
+#clear {
+	display: block;
+   	margin: 20px auto;
+	padding: 5px;
+	border-radius: 5px;
+	font: 24px Arial, sans-serif;
+	font-weight: bold;
+	background-color: #d8cba1;
+	border: 1px solid #424e6f;
+	color: #17264f;
+}
+
+#board {
+	display: block;
+	margin: auto;
+	height: 700px;
+	width: 700px;
+	border: 3px solid black;
+}
+
+.block {
+	display: inline-block;
+	float: left;
+	padding: 0px;
+	margin: 0px;
+	background-color: #ffffff;
+}
+
+.draw {
+	background-color: #000000;
+}
