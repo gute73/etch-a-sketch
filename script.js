@@ -1,4 +1,4 @@
-var gridLength = 16;
+var gridLength = 64;
 var block = "<div class='block'></div>";
 var br = "<br>";
 
