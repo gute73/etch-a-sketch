@@ -1,5 +1,6 @@
 html, body {
 	height: 100%;
+	background-color: #a83535;
 }
 
 #wrapper {
@@ -32,9 +33,14 @@ html, body {
 	float: left;
 	padding: 0px;
 	margin: 0px;
-	background-color: #ffffff;
+	background-color: #adafb2;
 }
 
 .draw {
 	background-color: #000000;
+}
+
+h1 {
+	font: 50px Arial Bold, sans-serif;
+	text-align: center;
 }

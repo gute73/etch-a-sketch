@@ -9,7 +9,10 @@ $(document).ready( function() {
 	});
 	$('#wrapper').on('click', '#clear', function() {
 		$('#board').empty();
-		gridLength = parseInt(prompt("Enter the number of boxes along one axis of the board:", "16"), 10);
+		gridLength = parseInt(prompt("Enter the number of boxes along one axis of the board:", "64"), 10);
+		while (gridLength < 16 || gridLength > 64) {
+			gridLength = parseInt(prompt("Please enter a value between 16 and 64:", "64"), 10);
+		}
 		buildGrid(gridLength);
 	});
 });
@@ -19,7 +22,6 @@ function buildGrid(length) {
 		for(var j=1; j <= length; ++j) {
 			$('#board').append(block);
 		}
-		$('#board').append(br);
 	}
 	var dimension = 700/length+"px";
 	$('.block').css({"height": dimension, "width": dimension});
